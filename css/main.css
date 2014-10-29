@@ -1,0 +1,50 @@
+body {
+	background-color: #f4f3e8;
+}
+#header{
+	height: 122px;
+	background: url("../photos/general/headerbackground.jpg") repeat-x bottom center;
+}
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;    
+}
+.content {
+	max-width: 960px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.page-header {
+	float: right;
+	padding-bottom: 0px;
+	margin-right: 20px;
+	margin-top: 40px;
+	border-bottom: 0px;
+	color: white;
+}
+.navbar {
+	border-radius: 0px;
+	border: 0px;
+	margin-bottom: 0px;
+}
+
+#home-carousel {
+	max-width: 100%;
+	width: 960px;
+}
+.row {
+	max-width: 960px 
+}
+.quick-links {
+	padding-top: 5px;
+}
+.left-item {
+	padding-right: 0px; 
+}
+.right-item {
+	padding-left: 0px; 
+}
+.middle-item {
+	padding-left: 5px; 
+	padding-right: 5px; 
+}
