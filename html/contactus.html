@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/main.css">
+		<script src="../js/jquery-2.1.1.min.js"></script>
+		<script src="../js/main.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<title>Cyclone Racing</title>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+	</head>
+
+	<body>
+		<div id="header">
+		</div>
+
+		<div class="container content">
+			<div class="row">
+				<div id="navbar">
+				</div>
+			</div>
+			<div class="row main-content" style="padding: 10px;">
+				<h3>Contact Us</h3>
+				<hr>
+				<p>
+					<h4>General Meeting:</h4>
+					Thursdays in Hoover 1227 @ 7:00 PM (approximately once a month)
+				</p>
+				<hr>
+				<p>
+					<h4>Team Meetings:</h4>
+					<a href="meetingformula.html">Formula</a><br>
+					<a href="meetingbaja.html">Baja</a><br>
+					<a href="meetingsupermileage">Supermileage</a><br>
+				</p>
+				<hr>
+				<p>
+					<strong>Formula and Baja shop and office is located in Nuclear Engineering. Saturdays and evenings are the best time to find us there.</strong><br><br>
+					<img src="../photos/general/Nuc-E-map.jpg">
+				</p>
+				<hr>
+				<p>
+					<h4>Shipping Info:</h4>
+					Iowa State University <br>
+					SAE International<br>
+					2025 Black Engineering<br>
+					Ames, IA 50011
+				</p>
+				<hr>
+				<p>
+					<h4>Emails:</h4>
+					<strong>Formula:</strong> <a href="mailto:formulaleaders@iastate.edu">formulaleaders@iastate.edu</a><br>
+					<strong>Baja:</strong> <a href="mailto:bajaleaders@iastate.edu">bajaleaders@iastate.edu</a><br>
+					<strong>Supermileage:</strong> <a href="mailto:supermileageleaders@iastate.edu">supermileage@iastate.edu</a><br>
+					<a href="officers.html">Officer Emails</a>
+				</p>
+			</div>
+		</div>
+		<script>
+			$( document ).ready(function() {
+			$("#header").load("header.html");
+			$("#navbar").load("navbar.html", function(){
+				$(".active").removeClass("active");
+				$(".contact").addClass("active");
+			});
+		});
+		</script>
+	</body>	
+</html>

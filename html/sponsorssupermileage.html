@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/main.css">
+		<script src="../js/jquery-2.1.1.min.js"></script>
+		<script src="../js/main.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<title>Cyclone Racing</title>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+	</head>
+	<body>
+		<div id="header">
+		</div>
+
+		<div class="container content">
+			<div class="row">
+				<div id="navbar">
+				</div>
+			</div>
+			<div class="row main-content">
+				<div class="col-md-9">
+					<h3>Sponsors</h3>
+					<hr>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="col-md-4">
+								<a href="../photos/supermileage/sponsors/bikeWorldLogo.png" class="thumbnail">
+									<img src="../photos/supermileage/sponsors/bikeWorldLogo.png" alt="">
+								</a>
+							</div>
+							<div class="col-md-4">
+								<a href="../photos/supermileage/sponsors/bsLogo.jpeg" class="thumbnail">
+									<img src="../photos/supermileage/sponsors/bsLogo.jpeg" alt="">
+								</a>
+							</div>
+							<div class="col-md-4">
+								<a href="../photos/supermileage/sponsors/solidWorksLogo.jpeg" class="thumbnail">
+									<img src="../photos/supermileage/sponsors/solidWorksLogo.jpeg" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="side-nav" id="supermileage-nav">
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$( document ).ready(function() {
+				$("#header").load("header.html");
+				$("#supermileage-nav").load("supermileage-nav.html", function(){
+					$("#supermileage-nav .active").removeClass("active");
+					$(".sponsors").addClass("active");
+				})
+				$("#navbar").load("navbar.html", function(){
+					$("#navbar .active").removeClass("active");
+					$(".supermileage").addClass("active");
+				});
+			});
+		</script>
+	</body>	
+</html>

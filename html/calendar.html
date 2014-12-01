@@ -12,21 +12,29 @@
 		<meta content="utf-8" http-equiv="encoding">
 	</head>
 	<body>
-	</body>
-	<div id="header">
-	</div>
-	<div class="container content">
-		<div id="navbar">
+		<div id="header">
 		</div>
-		<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ctvandyke24%40gmail.com&amp;color=%23A32929&amp;ctz=America%2FChicago" style=" border-width:0 " width="930" height="600" frameborder="0" scrolling="no"></iframe>
-	</div>
-	<script>
-		$( document ).ready(function() {
-			$("#header").load("header.html");
-			$("#navbar").load("navbar.html", function(){
-				$(".active").removeClass("active");
-				$(".calendar").addClass("active");
+		<div class="container content">
+			<div class="row">
+				<div id="navbar">
+				</div>
+			</div>
+			<div class="row main-content">
+				<div class="col-md-12">
+					<h3>Calendar</h3>
+					<hr>
+					<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ctvandyke24%40gmail.com&amp;color=%23A32929&amp;ctz=America%2FChicago" style=" border-width:0 " width="930" height="600" frameborder="0" scrolling="no"></iframe>
+				</div>
+			</div>
+		</div>
+		<script>
+			$( document ).ready(function() {
+				$("#header").load("header.html");
+				$("#navbar").load("navbar.html", function(){
+					$(".active").removeClass("active");
+					$(".calendar").addClass("active");
+				});
 			});
-		});
-	</script>
+		</script>
+	</body>
 </html>

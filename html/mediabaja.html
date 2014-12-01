@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="..//css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="..//css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="..//css/main.css">
+		<script src="..//js/jquery-2.1.1.min.js"></script>
+		<script src="..//js/main.js"></script>
+		<script type="text/javascript" src="..//js/bootstrap.min.js"></script>
+		<title>Cyclone Racing</title>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+		<link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+		<link rel="stylesheet" href="..//css/bootstrap-image-gallery.min.css">
+	</head>
+	<body>
+		<div id="header">
+		</div>
+
+		<div class="container content">
+			<div class="row">
+				<div id="navbar">
+				</div>
+			</div>
+			<div class="row main-content">
+				<div class="col-md-9">
+					<h3>Media</h3>
+					<hr>
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingOne">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+										Baja 2012-2013
+									</a>
+								</h4>
+							</div>
+							<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+								<div class="panel-body">
+									<div class="row">
+										<div class="col-md-3 media-row">
+											<a href="../photos/baja/2012-2013/img_0001_2.jpg" data-gallery>
+												<img class="img-responsive" src="../photos/baja/2012-2013/img_0001_2.jpg">
+											</a>
+										</div>
+										<div class="col-md-3 media-row">
+											<a href="../photos/baja/2012-2013/img_0002_2.jpg" data-gallery>
+												<img class="img-responsive" src="../photos/baja/2012-2013/img_0002_2.jpg">
+											</a>
+										</div>
+										<div class="col-md-3 media-row">
+											<a href="../photos/baja/2012-2013/img_0003_2.jpg" data-gallery>
+												<img class="img-responsive" src="../photos/baja/2012-2013/img_0003_2.jpg">
+											</a>
+										</div>
+										<div class="col-md-3 media-row">
+											<a href="../photos/baja/2012-2013/img_0004_2.jpg" data-gallery>
+												<img class="img-responsive" src="../photos/baja/2012-2013/img_0004_2.jpg">
+											</a>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-3 media-row">
+											<a href="../photos/baja/2012-2013/img_0005_2.jpg" data-gallery>
+												<img class="img-responsive" src="../photos/baja/2012-2013/img_0005_2.jpg">
+											</a>
+										</div>
+										<div class="col-md-3 media-row">
+											<a href="../photos/baja/2012-2013/img_0006_2.jpg" data-gallery>
+												<img class="img-responsive" src="../photos/baja/2012-2013/img_0006_2.jpg">
+											</a>
+										</div>
+										<div class="col-md-3 media-row">
+											<a href="../photos/baja/2012-2013/img_0007.jpg" data-gallery>
+												<img class="img-responsive" src="../photos/baja/2012-2013/img_0007.jpg">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="side-nav" id="baja-nav">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+		<div id="blueimp-gallery" class="blueimp-gallery">
+			<!-- The container for the modal slides -->
+			<div class="slides"></div>
+			<!-- Controls for the borderless lightbox -->
+			<h3 class="title"></h3>
+			<a class="prev">‹</a>
+			<a class="next">›</a>
+			<a class="close">×</a>
+			<a class="play-pause"></a>
+			<ol class="indicator"></ol>
+			<!-- The modal dialog, which will be used to wrap the lightbox content -->
+			<div class="modal fade">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" aria-hidden="true">&times;</button>
+								<h4 class="modal-title"></h4>
+							</div>
+							<div class="modal-body next"></div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default pull-left prev">
+									<i class="glyphicon glyphicon-chevron-left"></i>
+									Previous
+								</button>
+								<button type="button" class="btn btn-primary next">
+									Next
+									<i class="glyphicon glyphicon-chevron-right"></i>
+								</button>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$( document ).ready(function() {
+				$("#header").load("header.html");
+				$("#baja-nav").load("baja-nav.html", function(){
+					$("#baja-nav .active").removeClass("active");
+					$(".media").addClass("active");
+				})
+				$("#navbar").load("navbar.html", function(){
+					$("#navbar .active").removeClass("active");
+					$(".baja").addClass("active");
+				});
+			});
+		</script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+		<script src="..//js/bootstrap-image-gallery.min.js"></script>
+	</body>	
+</html>

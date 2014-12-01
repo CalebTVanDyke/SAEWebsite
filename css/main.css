@@ -5,14 +5,12 @@ body {
 	height: 122px;
 	background: url("../photos/general/headerbackground.jpg") repeat-x bottom center;
 }
-ul.nav li.dropdown:hover > ul.dropdown-menu {
-    display: block;    
-}
 .content {
 	max-width: 960px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 20px;
 }
 .page-header {
 	float: right;
@@ -38,11 +36,9 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 .quick-links {
 	padding-top: 5px;
 }
-.left-item {
+.item {
+	padding-left: 0px;
 	padding-right: 0px; 
-}
-.right-item {
-	padding-left: 0px; 
 }
 .middle-item {
 	padding-left: 5px; 
@@ -53,4 +49,23 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 }
 .sponsor-slide {
 	height: 175px;
+}
+.side-nav {
+	margin-top: 10px;
+}
+figcaption {
+	text-align: center;
+	font-size: 75%;
+}
+.main-content {
+	background-color: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.media-row {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.white {
+	background-color: white;
 }

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/main.css">
+		<script src="../js/jquery-2.1.1.min.js"></script>
+		<script src="../js/main.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<title>Cyclone Racing</title>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+	</head>
+
+	<body>
+		<div id="header">
+		</div>
+
+		<div class="container content">
+			<div class="row">
+				<div id="navbar">
+				</div>
+			</div>
+			<div class="row main-content">
+				<div class="col-md-9">
+					<h3>Team Leaders</h3>
+					<hr>
+					<table class="table table-striped">
+						<tbody>
+							<tr>
+								<td><strong>President</strong></td>
+								<td>Chloe Rangel</td>
+								<td>email</td>
+							</tr>
+							<tr>
+								<td><strong>Treasurer</strong></td>
+								<td>Nathan Eick</td>
+								<td>email</td>
+							</tr>
+							<tr>
+								<td><strong>Adviser</strong></td>
+								<td>Greg Luecke</td>
+								<td>email</td>
+							</tr>
+							<tr>
+								<td><strong>Baja Project Director</strong></td>
+								<td>Zachary Verbeck</td>
+								<td>email</td>
+							</tr>
+							<tr>
+								<td><strong>Baja Tech Director</strong></td>
+								<td>Levi Benning</td>
+								<td>email</td>
+							</tr>
+							<tr>
+								<td><strong>Formula Project Director</strong></td>
+								<td>Tyler Jones</td>
+								<td>email</td>
+							</tr>
+							<tr>
+								<td><strong>Formula Tech Director</strong></td>
+								<td>Michael Hauptmann</td>
+								<td>email</td>
+							</tr>
+							<tr>
+								<td><strong>Supermileage Tech Director</strong></td>
+								<td>Ian Baumgartner</td>
+								<td>email</td>
+							</tr>
+							<tr>
+								<td><strong>GSB Representative</strong></td>
+								<td>Chad Garber<br>Nathan Eick</td>
+								<td>email</td>
+							</tr>
+							<tr>
+								<td><strong>Outreach Coordinator</strong></td>
+								<td>Jacob Mazanec</td>
+								<td>email</td>
+							</tr>
+							<tr>
+								<td><strong>Safety Officer</strong></td>
+								<td>Andrew Tauke</td>
+								<td>email</td>
+							</tr>
+							<tr>
+								<td><strong>Vice President</strong></td>
+								<td>Tyler Jones</td>
+								<td>email</td>
+							</tr>
+							<tr>
+								<td><strong>Webmaster</strong></td>
+								<td>Caleb Van Dyke</td>
+								<td>email</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="col-md-3">
+					<div class="side-nav" id="formula-nav">
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$( document ).ready(function() {
+				$("#header").load("header.html");
+				$("#formula-nav").load("formula-nav.html", function(){
+					$("#formula-nav .active").removeClass("active");
+					$(".leaders").addClass("active");
+				})
+				$("#navbar").load("navbar.html", function(){
+					$("#navbar .active").removeClass("active");
+					$(".formula").addClass("active");
+				});
+			});
+		</script>
+	</body>	
+</html>

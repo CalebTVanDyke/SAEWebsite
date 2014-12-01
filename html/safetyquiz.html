@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/main.css">
+		<script src="../js/jquery-2.1.1.min.js"></script>
+		<script src="../js/main.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<title>Cyclone Racing</title>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+	</head>
+
+	<body>
+		<div id="header">
+		</div>
+
+		<div class="container content">
+			<div class="row">
+				<div id="navbar">
+				</div>
+			</div>
+			<div class="row main-content" style="padding: 10px;">
+				<h3>Safety Quiz</h3>
+				<hr>
+				<br>
+				To view the safety manual, click here.  <a href="https://stuorgs.engineering.iastate.edu/sae/files/2012/06/ISU_Nuclear_Engineering_Shop_Safety_Manual-2012.pdf" target="_blank">ISU Nuclear Engineering Shop Safety Manual-2012</a>
+				<br>
+				<br>
+				The <a href="https://stuorgs.engineering.iastate.edu/sae/files/2012/08/Safety-Quiz-General.pdf" target="_blank">General Safety Quiz</a> must be completed to be able to be in our shop.
+				<br>
+				<br>
+				The <a href="https://stuorgs.engineering.iastate.edu/sae/files/2012/08/Safety-Quiz-Machine-Specific.pdf" target="_blank">Machine Safety Quiz</a> must be completed in order to use any of our machinery.
+				<br>
+				<br>
+				<br>
+				Make sure you have a PDF reader installed onto your computer.
+			</div>
+		</div>
+		<script>
+			$( document ).ready(function() {
+			$("#header").load("header.html");
+			$("#navbar").load("navbar.html", function(){
+				$(".active").removeClass("active");
+				$(".quiz").addClass("active");
+			});
+		});
+		</script>
+	</body>	
+</html>

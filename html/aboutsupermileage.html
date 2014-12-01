@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/main.css">
+		<script src="../js/jquery-2.1.1.min.js"></script>
+		<script src="../js/main.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<title>Cyclone Racing</title>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+	</head>
+
+	<body>
+		<div id="header">
+		</div>
+
+		<div class="container content">
+			<div class="row">
+				<div id="navbar">
+				</div>
+			</div>
+			<div class="row main-content">
+				<div class="col-md-9">
+					<h3>About Supermileage</h3>
+					<hr>
+					<figure>
+						<img src="../photos/supermileage/team.jpg" class="img-responsive">
+						<figcaption>
+							Front row (left-right): Alex Timpe, Blake Pries, Rob Maroc, Brandon Loree, Caleb Van Dyke 
+							<br>Back row (left-right): Tyler Lo, Mike Byler, Kyle Gansemer, Joe Greco, Ian Baumgartner, Chris Becklund, Alex Reiner
+							<br>Not Pictured: Wade Polacek, Sean Russel, Samprati Shah
+						</figcaption>
+					</figure>
+					<br>
+					<p>
+						SAE Supermileage is an international collegiate competition that challenges student led teams from across the United States and Canada to engineer the most fuel efficient vehicle. This is the inaugural year of SAE Supermileage at Iowa State University. The goal for the club is to compete in the 2015 SAE Supermileage Competition in Marshall, Michigan and achieve a minimum of 200 miles per gallon. At the moment, the club consists of six members; five mechanical engineers and one software engineer. The club provides an excellent opportunity for members to refine their engineering skills and apply classroom knowledge towards a significant and important hands-on project.
+						<br>
+						Currently, we are working on two phases of the project. The first is organizing and modeling engine bay components (engine, fuel tank, battery, electronics, chain linkage, etc.). The second project is obtaining sponsorships to help fund the design and build of the car. At the top of the page you can see our most up to date design of the car. We will update this picture as the design and building of our car progresses. The current picture is a render of the body and wheels of the car. To see more pictures please visit our media section.
+					</p>
+				</div>
+				<div class="col-md-3">
+					<div class="side-nav" id="supermileage-nav">
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$( document ).ready(function() {
+				$("#header").load("header.html");
+				$("#supermileage-nav").load("supermileage-nav.html", function(){
+					$("#supermileage-nav .active").removeClass("active");
+					$(".about").addClass("active");
+				})
+				$("#navbar").load("navbar.html", function(){
+					$("#navbar .active").removeClass("active");
+					$(".supermileage").addClass("active");
+				});
+			});
+		</script>
+	</body>	
+</html>
