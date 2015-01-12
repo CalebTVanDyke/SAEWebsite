@@ -48,7 +48,7 @@ body {
 	margin-bottom: -15px;
 }
 .sponsor-slide {
-	height: 175px;
+	min-height: 175px;
 }
 .side-nav {
 	margin-top: 10px;
